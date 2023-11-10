@@ -1,0 +1,316 @@
+<html>
+
+    <head>
+
+        <title>dalits</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dalits.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Serif+4:ital,opsz,wght@1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="navbar smallFont">
+            <a href="#start">Start</a>
+            <a href="#theIssue">The Issue</a>
+            <a href="#theCause">The Cause</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#questions">Questions</a>
+            <a href="#yourHelp">Your Help</a>
+            <a href="#end">End</a>
+        </div>
+
+        <!-- Start -->
+
+        <div id="start" class="page1">
+            <div class="titleText">
+                <h1 class="bigFont" style="font-size: 72px;">Healthcare Disparities Between The General Population And Dalits</h1>
+                <h6 class="smallFont">scroll to start reading</h6>
+                <div class="arrow">
+                    <span></span>
+                </div>
+            </div>
+            <div class="titleImageContainer"><img src="artefacts/images/title.jpg" class="titleImage" style="transition: scale 1s" onmouseover="style.scale=1.1" onmouseleave="style.scale=1"></div>
+        </div>
+
+        <div class="emptySpace"></div>
+
+        <!-- The Issue -->
+        
+        <div id="theIssue" class="page2">
+            <div class="theIssueImageContainer"></div>
+            <div class="theIssueContent" style="display: flex;">
+                <div class="theIssueText" style="z-index: 1;">
+                    <h1 class="bigFont">The issue</h1>
+                    <h6 class="smallFont" style="margin:5%">The life expectancy of Dalit men is 63.5 years, compared to 67.1 years for general category men and the life expectancy of Dalit women is 65.9 years, compared to 69.7 years for general category women.</h6>
+                </div>
+                <div id="lifeExpectancyMen" class="graphs"></div>
+                <div id="lifeExpectancyWomen" class="graphs"></div>
+            </div>
+        </div>
+        
+        <!-- The Cause -->
+
+        <div id="theCause" class="page3">
+            <div class="socialDeterminantsOfHealthImageContainer"></div>
+                <div class="theCauseTextContainer">
+                    <div class="theCauseText">
+                        <h1 class="bigFont">The cause</h1>
+                    </div>
+                </div>
+            <div class="socialDeterminantsOfHealthContent">
+                <div class="socialDeterminantsOfHealthText">
+                    <h1 class="smallFont" style="font-weight: 500;"><u>Social determinants of health</u></h1>
+                    <h6 class="smallFont">Dalits are more likely to live in poverty, which is a major social determinant of health.<a style="color: white;" href="http://hdl.handle.net/10986/2289"> According to a 2021 study by the World Bank, 21.6% of Dalits in India live below the national poverty line, compared to 10.8% of the general population.*</a> Poverty can lead to several health problems, such as malnutrition, infectious diseases, and chronic diseases.</h6>
+                    <h6 class="smallFont">Dalits are also more likely to experience discrimination, which can also have a negative impact on health.<a style="color: white;" href="https://idsn.org/indias-health-inequality-severely-affects-dalits/"> A 2022 study by the Indian Institute of Public Health found that Dalits are more likely to be denied healthcare services than the general population.*</a> Discrimination can also lead to stress and social isolation, which can also have a negative impact on health.</h6>
+                </div>
+                <div id="generalPopulationBelowPovertyLine" class="graphs"></div>
+                <div id="dalitsBelowPovertyLine" class="graphs"></div>
+            </div>
+        </div>
+
+        <div class="page4">
+            <div class="accessToHealthcareImageContainer"></div>
+            <div class="accessToHealthcareContent">
+                <div class="accessToHealthcareText">
+                    <h1 class="smallFont" style="font-weight: 500;"><u>Access to healthcare</u></h1>
+                    <h6 class="smallFont">Dalits are less likely to have access to quality healthcare services. This is due to several factors, including financial barriers, lack of awareness of government healthcare schemes, and discrimination from healthcare providers.</h6>
+                    <h6 class="smallFont"><a style="color: white;" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7575841/">A 2021 study by the National Health Mission found that only 57.6% of Dalit children are fully immunized, compared to 68.2% of general category children.*</a> This suggests that Dalit children are less likely to receive essential vaccinations, which can put them at risk for infectious diseases.</h6>
+                    <h6 class="smallFont"><a style="color: white;" href="https://www.oxfamindia.org/press-release/india-inequality-report-2021-indias-unequal-healthcare-story">A 2022 study by Oxfam India found that 50% of Dalits faced difficulties in accessing non-COVID medical facilities, compared to 18.2% of the general population.*</a> This suggests that Dalits are more likely to face financial and other barriers to accessing healthcare services.</h6>
+                </div>
+                <div id="fullyImmunizedChildren" class="graphs"></div>
+                <div id="facedDifficultyAccessingMedicalFacilities" class="graphs"></div>
+            </div>
+        </div>
+
+        <div class="page5">
+            <div class="nutritionalStatusImageContainer"></div>
+            <div class="nutritionalStatusContent">
+                <div class="nutritionalStatusText">
+                    <h1 class="smallFont" style="font-weight: 500;"><u>Nutritional status</u></h1>
+                    <h6 class="smallFont">Dalits are more likely to be malnourished than the general population.<a style="color: white;" href="https://www.nutritioncoalition.org.in/the-comprehensive-national-nutrition-survey-cnns-2019-is-a-nationally-representative-and-comprehensive-nutritional-survey-profiling-children-and-adolescents-ages-0-19-in-india-to-better-un/"> A 2020 study by the National Nutrition Mission found that the stunting rate among children from Dalit households was 40.2%, compared to 35.3% among children from general category households.*</a> Malnutrition can lead to several health problems, including stunting, anaemia, and impaired cognitive development.</h6>
+                    <h6 class="smallFont"><a style="color: white;" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8810141/">A 2021 study by the Indian Council of Medical Research found that the prevalence of anaemia among Dalit women was 61.4%, compared to 58.6% among general category women.*</a> Anaemia can lead to fatigue, shortness of breath, and decreased productivity.</h6>
+                </div>
+                <div id="stuntingRateAmongChildren" class="graphs"></div>
+                <div id="anaemiaAmongWomen" class="graphs"></div>
+            </div>
+        </div>
+
+        <div class="page6">
+            <div class="exposureToEnvironmentalHazardsImageContainer"></div>
+            <div class="exposureToEnvironmentalHazardsText">
+                <h1 class="smallFont" style="font-weight: 500;"><u>Exposure to environmental hazards</u></h1>
+                <h6 class="smallFont">Dalits are more likely to live in areas with poor sanitation and environmental pollution.<a style="color: white;" href="https://www.exploringcs.org/"> A 2022 study by the Centre for Science and Environment found that Dalits are more likely to live in slums, which often have poor sanitation and are more exposed to air and water pollution.*</a></h6>
+                <h6 class="smallFont">Exposure to environmental hazards can lead to several health problems, including infectious diseases, respiratory problems, and cancer.<a style="color: white;" href="https://idsn.org/indias-health-inequality-severely-affects-dalits/"> A 2021 study by the Indian Institute of Public Health found that Dalits are more likely to die from respiratory diseases than the general population.*</a></h6>
+            </div>
+        </div>
+
+        <div class="page7">
+            <div class="lifestyleFactorsImageContainer"></div>
+            <div class="lifestyleFactorsContent">
+                <div class="lifestyleFactorsText">
+                    <h1 class="smallFont" style="font-weight: 500;"><u>Lifestyle factors</u></h1>
+                    <h6 class="smallFont">Dalits are more likely to engage in unhealthy lifestyle behaviours, such as smoking and tobacco use.<a style="color: white;" href="https://main.mohfw.gov.in/sites/default/files/GlobaltobacoJune2018_0.pdf"> A 2020 study by the Global Adult Tobacco Survey found that the prevalence of tobacco use among Dalits was 38.2%, compared to 22.2% among the general population.*</a> Unhealthy lifestyle behaviours can lead to several health problems, including cancer, heart disease, and stroke.</h6>
+                </div>
+                <div id="tobaccoUseAmongGeneralPopulation" class="graphs"></div>
+                <div id="tobaccoUseAmongDalits" class="graphs"></div>
+            </div>
+        </div>
+
+        <!-- Solutions -->
+
+        <div id="solutions" class="solutionsToCombatThisIssueTextContainer">
+            <div class="solutionsToCombatThisIssueText">
+                <h1 class="bigFont">Solutions to combat this issue</h1>
+            </div>
+        </div>
+
+        <div class="page8">        
+            <div class="mobileHealthClinicsImageContainer"></div>
+            <div class="mobileHealthClinicsText">
+                <h1 class="smallFont" style="font-weight: 500;"><u>Mobile health clinics</u></h1>
+                <h6 class="smallFont">Mobile health clinics have been shown to improve access to healthcare services for Dalits and other marginalized groups. A 2022 study by the Indian Institute of Public Health found that a mobile health clinic program in rural India led to a significant increase in the number of Dalits who received preventive healthcare services.</h6>
+            </div>
+        </div>
+
+        <div class="page9">        
+            <div class="nutritionProgramsImageContainer"></div>
+            <div class="nutritionProgramsText">
+                <h1 class="smallFont" style="font-weight: 500;"><u>Nutrition programs</u></h1>
+                <h6 class="smallFont">Nutrition programs have been shown to improve the nutritional status of Dalit children and women. A 2021 study by the National Health Mission found that a nutrition program in India led to a significant decrease in the stunting rate among Dalit children.</h6>
+            </div>
+        </div>
+
+        <div class="page10">        
+            <div class="sanitationProjectsImageContainer"></div>
+            <div class="sanitationProjectsText">
+                <h1 class="smallFont" style="font-weight: 500;"><u>Sanitation projects</u></h1>
+                <h6 class="smallFont">Sanitation projects have been shown to reduce the exposure of Dalits to environmental hazards. A 2022 study by the Centre for Science and Environment found that a sanitation project in India led to a significant decrease in the prevalence of diarrhoea among Dalit children.</h6>
+            </div>
+        </div>
+
+        <div class="page11">        
+            <div class="educationImageContainer"></div>
+            <div class="educationText">
+                <h1 class="smallFont" style="font-weight: 500;"><u>Education</u></h1>
+                <h6 class="smallFont">Education about healthcare and healthy lifestyle behaviours can help to reduce health disparities. A 2020 study by the Indian Council of Medical Research found that an educational program in India led to a significant increase in the number of Dalits who adopted healthy lifestyle behaviours, such as eating healthy foods and exercising regularly.</h6>
+            </div>
+        </div>
+
+        <!-- Questions -->
+
+        <div id="questions" class="page12">
+            <div class="someUnansweredQuestionsToThinkAboutText"><h1 class="bigFont">Some unanswered questions to think about</div>
+            <div class="emptyPage"></div>
+            <div class="someUnansweredQuestionsToThinkAboutPoints" style="padding-top: 40vh; padding-bottom: 30vh;"><h1 class="smallFont">&#x2022;&nbsp;Are the current government schemes effective in eliminating healthcare disparities?</div>
+            <div class="emptyPage"></div>
+            <div class="someUnansweredQuestionsToThinkAboutPoints" style="padding-top: 50vh; padding-bottom: 20vh;"><h1 class="smallFont">&#x2022;&nbsp;What unique factors may account for disparities in healthcare among marginal groups?</div>
+            <div class="emptyPage"></div>
+            <div class="someUnansweredQuestionsToThinkAboutPoints" style="padding-top: 60vh; padding-bottom: 10vh;"><h1 class="smallFont">&#x2022;&nbsp;What can be done to enhance data collection and analysis on healthcare disparities?</div>
+            <div class="emptyPage"></div>
+            <div class="someUnansweredQuestionsToThinkAboutPoints" style="padding-top: 70vh; padding-bottom: 0vh;"><h1 class="smallFont">&#x2022;&nbsp;What are the most cost-effective ways to reduce healthcare disparities?</div>
+        </div>
+
+        <!-- Your Help -->
+
+        <div id="yourHelp" class="howYouCanHelpHeadingContainer">
+            <div class="howYouCanHelpHeadingText"><h1 class="bigFont">How you, a citizen of India, can help combat this issue</h1></div>
+        </div>
+
+        <div class="page13">
+            <video autoplay loop muted plays-inline class="howYouCanHelpVideo"><source src="artefacts/videos/howYouCanHelp.mp4" type="video/mp4"></video> 
+            <h6 class="howYouCanHelpText smallFont">Volunteer at a health clinic that serves Dalits. You can help to provide medical care, educate patients about preventive health, or assist with administrative tasks.</h6>
+            <div class="emptyPage"></div>
+            <h6 class="howYouCanHelpText smallFont">Donate to a charity that is working to improve the health of Dalits. You can support a variety of programs, such as mobile health clinics, nutrition programs, and sanitation projects.</h6>
+            <div class="emptyPage"></div>
+            <h6 class="howYouCanHelpText smallFont">Support Dalit-led organizations. These organizations are working to empower Dalits and advocate for their rights.</h6>
+            <div class="emptyPage"></div>
+            <h6 class="howYouCanHelpText smallFont">Speak out against discrimination. If you see someone being discriminated against, speak up and say something. You can also educate others about the importance of equality and inclusion.</h6>
+            <div class="emptyPage"></div>
+            <h6 class="howYouCanHelpText smallFont">Promote healthy lifestyles in your community. You can encourage people to eat healthy foods, exercise regularly, and avoid smoking and tobacco use.</h6>
+        </div>
+
+        <!-- End -->
+
+        <div id="end" class="page14">        
+            <div class="conclusionImageContainer"></div>
+            <h6 class="conclusionText smallFont">Health disparities between the general population and Dalits in India are a complex issue with no easy solutions, but we can all play a role in creating a more equitable and just society by working together to address the root causes of these disparities.</h6>
+        </div>
+
+        <div class="page15">
+        </div>
+
+    </body>
+
+    <script src="dalits.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script>
+
+        const x1 = ["General", "Dalits"];
+        const y1 = [67.1, 63.5];
+        const data1 = [{
+        x:x1,
+        y:y1,
+        type:"bar",
+        orientation:"v",
+        marker: {color:"rgba(0,0,255,0.6)"}
+        }];
+        const layout1 = {yaxis: {range: [0, 100], title: "Age in years"},title:"The life expectancy of men"};
+        Plotly.newPlot("lifeExpectancyMen", data1, layout1);
+
+        const x2 = ["General", "Dalits"];
+        const y2 = [69.7, 65.9];
+        const data2 = [{
+        x:x2,
+        y:y2,
+        type:"bar",
+        orientation:"v",
+        marker: {color:"rgba(0,0,255,0.6)"}
+        }];
+        const layout2 = {yaxis: {range: [0, 100], title: "Age in years"},title:"The life expectancy of women"};
+        Plotly.newPlot("lifeExpectancyWomen", data2, layout2);
+
+        const x3 = ["Above poverty line", "Below poverty line"];
+        const y3 = [89.2,10.8];
+        const layout3 = {title:"General population"};
+        const data3 = [{labels:x3, values:y3, type:"pie"}];
+        Plotly.newPlot("generalPopulationBelowPovertyLine", data3, layout3);
+
+        const x4 = ["Above poverty line", "Below poverty line"];
+        const y4 = [78.4,21.6];
+        const layout4 = {title:"Dalits"};
+        const data4 = [{labels:x4, values:y4, type:"pie"}];
+        Plotly.newPlot("dalitsBelowPovertyLine", data4, layout4);
+
+        const x5 = [57.6, 68.2];
+        const y5 = ["Dalits", "General"];
+        const data5 = [{
+        x:x5,
+        y:y5,
+        type:"bar",
+        orientation:"h",
+        marker: {color:"rgba(0,255,0,0.6)"}
+        }];
+        const layout5 = {
+        xaxis: {range: [0, 100], title: "Percentage"},title:"Fully immunized children"};
+        Plotly.newPlot("fullyImmunizedChildren", data5, layout5);
+
+        const x6 = [50,18.2];
+        const y6 = ["Dalits","General"];
+        const data6 = [{
+        x:x6,
+        y:y6,
+        type:"bar",
+        orientation:"h",
+        marker: {color:"rgba(0,255,0,0.6)"}
+        }];
+        const layout6 = {
+        xaxis: {range: [0, 100], title: "Percentage"},title:"Faced difficulty accessing healthcare"};
+        Plotly.newPlot("facedDifficultyAccessingMedicalFacilities", data6, layout6);
+
+        const x7 = ["General", "Dalits"];
+        const y7 = [40.2, 35.3];
+        const data7 = [{
+        x:x7,
+        y:y7,
+        type:"bar",
+        orientation:"v",
+        marker: {color:"rgba(255,0,0,0.6)"}
+        }];
+        const layout7 = {
+        yaxis: {range: [0, 100], title: "Percentage"},title:"Stunting rate among children"};
+        Plotly.newPlot("stuntingRateAmongChildren", data7, layout7);
+
+        const x8 = ["General", "Dalits"];
+        const y8 = [61.4, 58.6];
+        const data8 = [{
+        x:x8,
+        y:y8,
+        type:"bar",
+        orientation:"v",
+        marker: {color:"rgba(255,0,0,0.6)"}
+        }];
+        const layout8 = {
+        yaxis: {range: [0, 100], title: "Percentage"},title:"Anaemia among women"};
+        Plotly.newPlot("anaemiaAmongWomen", data8, layout8);
+
+        const x9 = ["Smokers", "Non-smokers"];
+        const y9 = [38.2,61.8];
+        const layout9 = {title:"Tobacco use among Dalits"};
+        const data9 = [{labels:x9, values:y9, type:"pie", hole:0.4}];
+        Plotly.newPlot("tobaccoUseAmongDalits", data9, layout9);
+
+        const x10 = ["Smokers", "Non-smokers"];
+        const y10 = [22.2,77.8];
+        const layout10 = {title:"Tobacco use among general population"};
+        const data10 = [{labels:x10, values:y10, type:"pie", hole:0.4}];
+        Plotly.newPlot("tobaccoUseAmongGeneralPopulation", data10, layout10);
+
+    </script>
+    
+</html>

@@ -1,0 +1,553 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: cornflowerblue;
+}
+
+.bigFont{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    margin: 5%;
+}
+
+.smallFont{
+    font-family:'Source Serif 4', serif;
+    font-size: 20px ;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+}
+
+.graphs{
+    z-index: 1;
+    width:350px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.emptyPage{
+    position: relative;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    flex: 1;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+.page1{
+    position: relative;
+    height: 100vh;
+}
+
+.titleText{
+    display: flex; 
+    overflow: initial;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    animation: slideDown 2s;
+}
+
+.titleImage{
+    position: absolute;
+    left: -30%;
+}
+
+.titleImageContainer{
+    display: inline-block; 
+    overflow: hidden;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    animation: slideUp 2s;
+}
+
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll 2s infinite;
+}
+
+.emptySpace{
+    position: relative;
+    height: 50vh;
+}
+
+.page2{
+    position: relative;
+    height: 350vh;
+}
+
+.theIssueImageContainer{
+    position: sticky;
+    top: 0;
+    height: 50vh;
+    width: 100%;
+    background-image: url(artefacts/images/theIssue.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.theIssueContent{  
+    position: relative;
+    top: 100vh;
+    left: 0;
+    width: 100%; 
+    display: flex;
+}
+
+.theIssueText{
+    width: 50%;   
+}
+
+.page3{
+    position: relative;
+    height: 350vh;
+}
+
+.socialDeterminantsOfHealthImageContainer{
+    position: sticky;
+    top: 0;
+    height: 50vh;
+    width: 100%;
+    background-image: url(artefacts/images/socialDeterminantsOfHealth.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.theCauseTextContainer{
+    z-index: 1;
+    position: absolute;
+    top: 150vh;
+    height: 1250vh;
+    width: 100%;
+    text-align: center;
+}
+
+.theCauseText{
+    position: sticky;
+    padding: 5px;
+    top: 0; 
+}
+
+.socialDeterminantsOfHealthContent{  
+    position: relative;
+    top: 200vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.socialDeterminantsOfHealthText{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+}
+
+.page4{
+    position: relative;
+    height: 350vh;
+}
+
+.accessToHealthcareImageContainer{
+    position: sticky;
+    top: 0;
+    height: 50vh;
+    width: 100%;
+    background-image: url(artefacts/images/accessToHealthcare.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.accessToHealthcareContent{  
+    position: relative;
+    top: 100vh;
+    left: 0;
+    width: 100%; 
+    display: flex;
+}
+
+.accessToHealthcareText{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+}
+
+.page5{
+    position: relative;
+    height: 250vh;
+}
+
+.nutritionalStatusImageContainer{
+    position: sticky;
+    top: 0;
+    height: 50vh;
+    width: 100%;
+    background-image: url(artefacts/images/nutritionalStatus.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nutritionalStatusContent{  
+    position: relative;
+    top: 50vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.nutritionalStatusText{
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page6{
+    position: relative;
+    height: 250vh;
+}
+
+.exposureToEnvironmentalHazardsImageContainer{
+    position: sticky;
+    top: 0;
+    height: 50vh;
+    width: 100%;
+    background-image: url(artefacts/images/exposureToEnvironmentalHazards.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+}
+
+.exposureToEnvironmentalHazardsText{  
+    position: relative;
+    top: 50vh;
+    left: 0;
+    width: 90%;
+    padding: 5px;
+    margin-left: 10vh;
+}
+
+.page7{
+    position: relative;
+    height: 250vh;
+}
+
+.lifestyleFactorsImageContainer{
+    position: sticky;
+    top: 0;
+    height: 50vh;
+    width: 100%;
+    background-image: url(artefacts/images/lifestyleFactors.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+}
+
+.lifestyleFactorsContent{  
+    position: relative;
+    top: 50vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.lifestyleFactorsText{
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.solutionsToCombatThisIssueTextContainer{
+    z-index: 1;
+    position: absolute;
+    top: 2050vh;
+    height: 1100vh;
+    width: 100%;
+    justify-content: center; 
+    text-align: center;
+    margin: auto;
+}
+
+.solutionsToCombatThisIssueText{
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
+
+.page8{
+    position: relative;
+    top: 250vh;
+    height: 250vh;
+}
+
+.mobileHealthClinicsImageContainer{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(artefacts/images/mobileHealthClinics.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mobileHealthClinicsText{  
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 2vh;
+    background-color: black;
+}
+
+.page9{
+    position: relative;
+    top:250vh;
+    height: 250vh;
+}
+
+.nutritionProgramsImageContainer{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(artefacts/images/nutritionPrograms.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nutritionProgramsText{  
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 2vh;
+    background-color: black;
+}
+
+.page10{
+    position: relative;
+    top:250vh;
+    height: 250vh;
+}
+
+.sanitationProjectsImageContainer{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(artefacts/images/sanitationProjects.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sanitationProjectsText{  
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 2vh;
+    background-color: black;
+}
+
+.page11{
+    position: relative;
+    top:250vh;
+    height: 300vh;
+}
+
+.educationText{  
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 2vh;
+    background-color: black;
+}
+
+.educationImageContainer{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(artefacts/images/education.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page12{
+    z-index: 1;
+    position: relative;
+    top:350vh;
+    height: 900vh;
+    width: 100%;
+    text-align: left;
+}
+
+.someUnansweredQuestionsToThinkAboutText{
+    position: sticky;
+    top: 0;
+    justify-content: center; 
+    text-align: center;
+    margin: auto;
+    padding-left: 10vh;
+    padding-top: 5px;
+    padding-bottom: 50vh;
+}
+
+.someUnansweredQuestionsToThinkAboutPoints{
+    position: sticky;
+    top:0;
+    justify-content: center; 
+    text-align: center;
+    margin: auto;
+}
+
+.page13{
+    position: relative;
+    top: 450vh;
+    height: 1000vh;
+}
+
+.howYouCanHelpVideo{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.howYouCanHelpHeadingContainer{
+    z-index: 1;
+    position: absolute;
+    top: 4500vh;
+    height: 720vh;
+    width: 100%;
+    text-align:center;
+}
+
+.howYouCanHelpHeadingText{
+    position: sticky;
+    padding: 5px;
+    top: 0;
+}
+
+.howYouCanHelpText{  
+    position: relative;
+    top:200vh;
+    width: 50%;
+    padding: 50px;
+    justify-content: center;
+    margin: auto;
+    background-color: black;
+}
+
+.page14{
+    position: relative;
+    top: 450vh;
+    height: 210vh;
+}
+
+.conclusionImageContainer{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(artefacts/images/conclusion.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.conclusionText{  
+    position: relative;
+    top:50vh;
+    width: 50%;
+    padding: 50px;
+    justify-content: center;
+    margin: auto;
+    background-color: black;
+}
+
+@keyframes slideDown {
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes scroll{
+    0%{
+        opacity: 0;
+        transform: rotate(45 deg);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45 deg);
+    }
+}
