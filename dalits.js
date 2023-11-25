@@ -1,3 +1,5 @@
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
+window.onload = scrollToTop
+
+function scrollToTop(){
+    window.scrollTo(0,0);
 }
