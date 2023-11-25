@@ -1,3 +1,8 @@
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100vh;
     margin: 0;
@@ -8,7 +13,7 @@ body{
     font-family: 'Oswald', sans-serif;
     color: white;
     text-shadow: 2px 2px 4px black;
-    margin: 5%;
+    margin: 10%;
 }
 
 .smallFont{
@@ -19,11 +24,30 @@ body{
     color: white;
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: cornflowerblue;
+    border-radius: 10px;
+}
+
 .graphs{
     z-index: 1;
     width:350px;
     height: 300px;
     padding-top: 20px;
+
+}
+
+.emptyHalfPage{
+    position: relative;
+    height: 50vh;
 }
 
 .emptyPage{
@@ -31,7 +55,7 @@ body{
     height: 100vh;
 }
 
-.navbar {
+.navbar{
     background-color: black;
     position: fixed;
     top: 0;
@@ -41,7 +65,7 @@ body{
     justify-content: space-around;
 }
 
-.navbar a {
+.navbar a{
     flex: 1;
     color: #f2f2f2;
     text-align: center;
@@ -49,9 +73,10 @@ body{
     text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar a:hover{
     background-color: white;
     color: black;
+    transition: 0.5s;
 }
 
 .page1{
@@ -105,11 +130,6 @@ body{
     animation: scroll 2s infinite;
 }
 
-.emptySpace{
-    position: relative;
-    height: 50vh;
-}
-
 .page2{
     position: relative;
     height: 350vh;
@@ -123,6 +143,9 @@ body{
     background-image: url(artefacts/images/theIssue.png);
     background-size: cover;
     background-position: center;
+    animation: fade-out linear both;
+    animation-timeline: view();
+    animation-range: entry 625% cover 90%;
 }
 
 .theIssueContent{  
@@ -140,6 +163,9 @@ body{
 .page3{
     position: relative;
     height: 350vh;
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 40%;
 }
 
 .socialDeterminantsOfHealthImageContainer{
@@ -150,10 +176,13 @@ body{
     background-image: url(artefacts/images/socialDeterminantsOfHealth.jpg);
     background-size: cover;
     background-position: center;
+    animation: fade-out linear both;
+    animation-timeline: view();
+    animation-range: entry 650% cover 90%;
 }
 
 .theCauseTextContainer{
-    z-index: 1;
+    z-index: 10;
     position: absolute;
     top: 150vh;
     height: 1250vh;
@@ -184,6 +213,9 @@ body{
 .page4{
     position: relative;
     height: 350vh;
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 30%;
 }
 
 .accessToHealthcareImageContainer{
@@ -194,6 +226,9 @@ body{
     background-image: url(artefacts/images/accessToHealthcare.jpg);
     background-size: cover;
     background-position: center;
+    animation: fade-out linear both;
+    animation-timeline: view();
+    animation-range: entry 600% cover 89%;
 }
 
 .accessToHealthcareContent{  
@@ -213,6 +248,9 @@ body{
 .page5{
     position: relative;
     height: 250vh;
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 40%;
 }
 
 .nutritionalStatusImageContainer{
@@ -223,6 +261,9 @@ body{
     background-image: url(artefacts/images/nutritionalStatus.jpg);
     background-size: cover;
     background-position: center;
+    animation: fade-out linear both;
+    animation-timeline: view();
+    animation-range: entry 500% cover 85%;
 }
 
 .nutritionalStatusContent{  
@@ -242,6 +283,9 @@ body{
 .page6{
     position: relative;
     height: 250vh;
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 40%;
 }
 
 .exposureToEnvironmentalHazardsImageContainer{
@@ -253,6 +297,9 @@ body{
     background-size: cover;
     background-position: center;
     transform: scaleX(-1);
+    animation: fade-out linear both;
+    animation-timeline: view();
+    animation-range: entry 500% cover 85%;
 }
 
 .exposureToEnvironmentalHazardsText{  
@@ -267,6 +314,9 @@ body{
 .page7{
     position: relative;
     height: 250vh;
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 40%;
 }
 
 .lifestyleFactorsImageContainer{
@@ -278,6 +328,9 @@ body{
     background-size: cover;
     background-position: center;
     transform: scaleX(-1);
+    animation: fade-out linear both;
+    animation-timeline: view();
+    animation-range: entry 500% cover 85%;
 }
 
 .lifestyleFactorsContent{  
@@ -419,9 +472,8 @@ body{
     z-index: 1;
     position: relative;
     top:350vh;
-    height: 900vh;
+    height: 700vh;
     width: 100%;
-    text-align: left;
 }
 
 .someUnansweredQuestionsToThinkAboutText{
@@ -430,9 +482,8 @@ body{
     justify-content: center; 
     text-align: center;
     margin: auto;
-    padding-left: 10vh;
     padding-top: 5px;
-    padding-bottom: 50vh;
+    padding-bottom: 25vh;
 }
 
 .someUnansweredQuestionsToThinkAboutPoints{
@@ -459,7 +510,7 @@ body{
 .howYouCanHelpHeadingContainer{
     z-index: 1;
     position: absolute;
-    top: 4500vh;
+    top: 4300vh;
     height: 720vh;
     width: 100%;
     text-align:center;
@@ -484,7 +535,7 @@ body{
 .page14{
     position: relative;
     top: 450vh;
-    height: 210vh;
+    height: 280vh;
 }
 
 .conclusionImageContainer{
@@ -505,6 +556,22 @@ body{
     justify-content: center;
     margin: auto;
     background-color: black;
+}
+
+.end{
+    position: relative;
+    top: 443vh;
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+    background-color: black;
+}
+
+.endText{
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
 }
 
 @keyframes slideDown {
@@ -549,5 +616,29 @@ body{
     100%{
         opacity: 0;
         transform: rotate(45 deg);
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+    0%{
+        opacity: 1;
     }
 }
